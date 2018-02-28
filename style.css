@@ -2,7 +2,7 @@ html {
   overflow-y: scroll;
 }
 
-body {
+.general-background {
 	background-image: url("./background.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -133,3 +133,22 @@ li {
 }
 
 
+.campaign-title {
+	width: 50%;
+	padding-top: 100px;
+	color: black;
+	text-align: center;
+	border-bottom: 8px double black;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Helvetica;
+	font-size: 40px;
+}
+
+.campaign-image {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	width: 50%;
+}
