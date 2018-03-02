@@ -19,18 +19,114 @@ html {
 	z-index: -1;
 }
 
-.page-header {
-	background-color: white;
-	color: black;
-	border-bottom: 1px double grey;
+/* MAIN HEADER STUFF */
+#header {
 	width: 100%;
-	height: 80px;
+	height: 75px;
+	background: #333;
+	line-height: 35px; /*zelfde als height zorgt er voor dat het in het midden komt */
 	position: fixed;
-	z-index: 99;
-	text-align: center;
-  	padding-left: 0;
+	z-index: 9999;
+	font-size: 22px;
+	font-family: 'Courier New';
 }
 
+#nav {
+	list-style-type: none;
+}
+
+#nav li {
+	margin-right: 20px;
+	float: left;
+	padding-right: 40px;
+}
+
+#nav li a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#nav li a:hover {
+	color: #DDD; 
+	text-decoration: none;
+} 
+
+#nav li a:active {
+	background-color: white;
+	color: black;
+}
+
+
+/* SUB HEADER STUFF */
+
+#subheader {
+	width: 100%;
+	height: 40px;
+	background: #D3D3D3;
+	line-height: 15px; /*zelfde als height zorgt er voor dat het in het midden komt */
+	position: fixed;
+	margin-top: 75px;
+	z-index: 9999;
+	font-size: 14px;
+	font-family: 'Courier New'
+}
+
+#subnav {
+	list-style-type: none;
+}
+
+#subnav li {
+	margin-right: 20px;
+	float: left;
+}
+
+#subnav li a {
+	color: #333;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#subnav li a:hover {
+	color: #000; 
+	text-decoration: none;
+} 
+
+#subnav li a:active {
+	background-color: black;
+	color: white;
+}
+
+
+/*HOMEPAGE STUFF */
+
+#homepage img  {
+	height: 400px;
+	width: 400px;
+}
+
+.button {
+	background-color: #555;
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px 15px;
+}
+
+#leftbutton {
+	position: absolute;
+	top: 53%;
+	left: 35%;
+}
+
+#rightbutton {
+	position: absolute;
+	top: 53%;
+	right: 35%;
+}
+
+/* BLOG STUFF */
 .army-introduction {
 	color: black;
 	font-style: italic;
@@ -38,12 +134,13 @@ html {
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 100px;
+	padding-top: 150px;
+	font-size: 18px;
 }
 
 .blogspace {
 	padding-top: 50px;
-	width: 35%;
+	width: 60%;
 	padding-left: 10%;
 }
 
@@ -61,7 +158,7 @@ html {
 	font-family: Courier;
 	position: relative;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 18px;
 	border-top: 8px double grey;
 	padding-top: 8px;
 }
@@ -76,7 +173,7 @@ html {
 .blogtext {
 	color: black;
 	font-family: Courier;
-	font-size: 18px;
+	font-size: 14px;
 	text-align: left;
 	position: relative;
 }
@@ -87,51 +184,6 @@ html {
 	border-radius: 8px;
 	padding-left: 350px;
 }
-
-.button:link {
-	color: white;
-	text-decoration: none;
-}
-
-.button:visited {
-	color: black;
-}
-
-.button:hover {
-	background-color: grey;
-	color: white;
-}
-
-li {
-	display: inline-block;
-}
-
-.button {
-	background-color: white;
-	color: black;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	width: 200px;
-	vertical-align: middle;
-	font-family: Helvetica;
-	font-size: 18px;
-	margin-top: 0;
-}
-
-.button.title {
-	font-size: 22px;
-	width: 800px;
-}
-
-.rightborder {
-	border-right: 8px double grey;
-}
-
-.border {
-	border-right: 8px double grey;
-	border-left: 8px double grey;
-}
-
 
 .campaign-title {
 	width: 50%;
@@ -151,4 +203,50 @@ li {
 	margin-right: auto;
 	padding-top: 10px;
 	width: 50%;
+}
+
+/*BATTLE LOG GALLERY */
+
+div.gallery {
+    margin: 10px;
+    float: left;
+    width: 380px;
+}	
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    margin-top: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 20px;
+}
+
+div.image-description {
+	font-family: sans-serif;
+	padding-top:300px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    height: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 400px;
+
+}
+
+.grid-image {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
 }

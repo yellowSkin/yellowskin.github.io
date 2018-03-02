@@ -1,0 +1,32 @@
+#header {
+	width: 100%;
+	height: 75px;
+	background: #333;
+	line-height: 75px; /*zelfde als height zorgt er voor dat het in het midden komt */
+}
+
+#nav {
+	list-style-type: none;
+}
+
+#nav li {
+	margin-right: 20px;
+	float: left;
+	font-family: sans-serif;
+}
+
+#nav li a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#nav li a:hover {
+	color: #DDD; 
+	text-decoration: none;
+} 
+
+#nav li a:active {
+	background-color: #FFF;
+	color: #DDD;
+}
