@@ -65,10 +65,6 @@ body {
     margin-top: 0;
 }
 
-.nav-item .active li {
-    background-color: rgb(32, 117, 32);
-}
-
 .nav-item a {
     color: white;
     font-family: 'Mina';
@@ -84,3 +80,7 @@ body {
     background-color: rgb(40, 116, 40);
 }
 
+.nav-item a:hover {
+    background-color: black;
+    color: white;
+}
